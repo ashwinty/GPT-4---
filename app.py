@@ -6,7 +6,7 @@ from streamlit_chat import message
 
 def api_calling(prompt):
     completions = openai.ChatCompletion.create(
-        model="gpt-4",  # Update model name if needed
+        model="gpt-3.5-turbo",  # Update model name if needed
         messages=[
             {"role": "user", "content": prompt}
         ]
